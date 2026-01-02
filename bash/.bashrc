@@ -138,3 +138,4 @@ fi
 if [[ -f ~/.nvim/AppRun ]] then
     alias vim=~/.nvim/AppRun
 fi
+
