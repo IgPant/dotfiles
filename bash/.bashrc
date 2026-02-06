@@ -133,6 +133,7 @@ fi
 [ "$(command -v bat)" ] && alias cat="bat --style=plain"
 # Source local configs
 [ -f ~/.localrc ] && . ~/.localrc
+[ -f ~/.bash_aliases ] && . ~/.bash_aliases
 [ -f "$HOME/.cargo/env" ] && . "$HOME/.cargo/env"
 
 if [[ -f ~/.nvim/AppRun ]] then

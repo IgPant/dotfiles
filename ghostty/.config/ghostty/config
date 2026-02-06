@@ -25,6 +25,9 @@ palette = 15=#ebdbb2
 background = #191915
 foreground = #c5c8c6
 
+font-family = Iosevka Nerd Font Mono
+font-size = 14
+
 cursor-color = cell-foreground
 cursor-text = cell-background
 

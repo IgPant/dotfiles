@@ -1,12 +1,6 @@
 local opts = { noremap = true, silent = true }
 local keymap = vim.api.nvim_set_keymap
 
--- disable arrow keys
-keymap("n", "<Up>", "<Nop>", opts)
-keymap("n", "<Down>", "<Nop>", opts)
-keymap("n", "<Left>", "<Nop>", opts)
-keymap("n", "<Right>", "<Nop>", opts)
-
 -- faster scroll with C-e C-y
 keymap("n", "<C-y>", "5<C-y>", opts)
 keymap("n", "<C-e>", "5<C-e>", opts)
