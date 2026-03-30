@@ -1,4 +1,4 @@
-shell-integration-features = sudo,ssh-env
+shell-integration-features = no-title,sudo,ssh-env
 window-decoration = server
 
 

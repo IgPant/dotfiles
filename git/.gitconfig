@@ -1,6 +1,6 @@
 [user]
-	email = vitoralvespavani@gmail.com
-	name = Vitor Pavani
+	email = igorpiresantunes@gmail.com
+	name = Igor Antunes
 [core]
 	excludesFile = ~/.gitignore
 	whitespace = space-before-tab,-indent-with-non-tab,trailing-space
@@ -88,3 +88,5 @@
 
 [help]
     autocorrect = prompt
+[safe]
+	directory = /home/igorantunes/sshfs/gps_ws/src/ntrip_client

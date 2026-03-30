@@ -4,6 +4,15 @@ local keymap = vim.api.nvim_set_keymap
 -- faster scroll with C-e C-y
 keymap("n", "<C-y>", "5<C-y>", opts)
 keymap("n", "<C-e>", "5<C-e>", opts)
+-- local neoscroll = require("neoscroll")
+--
+-- vim.keymap.set("n", "<C-y>", function()
+-- 	neoscroll.scroll(-5, { move_cursor = false, duration = 100 })
+-- end)
+--
+-- vim.keymap.set("n", "<C-e>", function()
+-- 	neoscroll.scroll(5, { move_cursor = false, duration = 100 })
+-- end)
 
 -- move lines with <C-j><C-h>
 keymap("n", "<C-j>", ":m .+1<CR>==", opts)

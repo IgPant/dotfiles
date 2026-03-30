@@ -140,3 +140,16 @@ if [[ -f ~/.nvim/AppRun ]] then
     alias vim=~/.nvim/AppRun
 fi
 
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+ . /opt/ros/jazzy/setup.bash
+
+export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+# opencode
+export PATH=/home/igorantunes/.opencode/bin:$PATH
