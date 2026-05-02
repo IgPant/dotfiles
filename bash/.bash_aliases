@@ -4,7 +4,7 @@ alias clip='xclip -selection clipboard'
 alias activate='source .venv/bin/activate'
 alias gs='git status'
 alias ga='git add'
-alias gc='git commit -m"'
+gc() { git commit -m "$*"; }
 alias gp='git push'
 alias ta='tmux attach || tmux new'
 alias tks='tmux kill-session'

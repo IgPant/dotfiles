@@ -148,8 +148,14 @@ export NVM_DIR="$HOME/.nvm"
  . /opt/ros/jazzy/setup.bash
 
 export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
+export CYCLONEDDS_URI=file://$HOME/.cyclonedds.xml
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
 # opencode
 export PATH=/home/igorantunes/.opencode/bin:$PATH
+
+# OpenClaw Completion
+source "/home/igorantunes/.openclaw/completions/openclaw.bash"
+
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv bash)"
