@@ -155,6 +155,17 @@ export CYCLONEDDS_URI=file://$HOME/.cyclonedds.xml
 # opencode
 export PATH=/home/igorantunes/.opencode/bin:$PATH
 
+usage() {
+  openclaw channels list 2>/dev/null | sed -n '/Usage:/,/Docs:/p' | grep -v 'Docs:\|Monthly' | \
+    perl -MPOSIX=strftime -pe '
+      s/(\d+)% left/(100-$1)."% used"/ge;
+      if (/(Limit).*?resets (\d+)d (\d+)h/) {
+        my $d=$2; my $h=$3;
+        s/resets \d+d \d+h/"resets ${d}d ${h}h (" . strftime("%a %b %d, %H:%M", localtime(time + 86400*$d + 3600*$h)) . ")"/e
+      }
+    '
+}
+
 # OpenClaw Completion
 source "/home/igorantunes/.openclaw/completions/openclaw.bash"
 
